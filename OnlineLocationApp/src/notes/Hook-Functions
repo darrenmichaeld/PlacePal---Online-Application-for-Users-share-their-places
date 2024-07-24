@@ -1,0 +1,27 @@
+-- NOTE : Hooks Applied in the project --
+
+useState:
+
+useState is a hook used to manage state within a functional component.
+It returns an array with two elements: the current state value and a function to update that state.
+The first element of the array is the current state value, which you can access and display in your component.
+The second element is a function that allows you to update the state. When this function is called with a new value, React re-renders the component with the updated state value.
+
+useCallback:
+
+useCallback is a hook used to MEMOIZE functions in React.
+It returns a memoized version of the function, which means that the function is only recreated if its dependencies change.
+Memoization helps optimize performance, especially when passing functions as props to child components, by avoiding unnecessary re-renders.
+
+useReducer:
+
+useReducer is a hook used to manage state in a more complex way, particularly when the state logic involves multiple changes and transitions.
+It is an alternative to useState and provides a way to handle state updates by specifying actions and reducers.
+It takes in a reducer function and an initial state, and returns the current state and a dispatch function to trigger state updates via actions.
+
+useEffect:
+
+useEffect is a hook used to handle side effects in functional components.
+It is commonly used for fetching data, subscribing to events, manipulating the DOM, and more.
+It takes in a callback function that gets executed after the component has rendered.
+The callback function can optionally return a cleanup function to clean up any resources or subscriptions when the component unmounts.
